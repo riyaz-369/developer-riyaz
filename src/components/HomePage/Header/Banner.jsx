@@ -48,7 +48,6 @@ const Banner = () => {
               src={bannerImg}
               alt="Riyaz cover image"
               width={600}
-              quality={100}
             />
           </div>
         </div>
