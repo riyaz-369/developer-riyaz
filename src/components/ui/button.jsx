@@ -13,7 +13,7 @@ const buttonVariants = cva(
           "bg-primary text-primary-foreground rounded-full shadow transition-all hover:-translate-y-1",
 
         outline:
-          "border border-primary text-primary bg-background rounded-full shadow-sm transition-all hover:bg-primary hover:text-white",
+          "border border-primary text-primary bg-background rounded-full shadow transition-all hover:-translate-y-1 hover:bg-primary hover:text-white",
       },
       size: {
         default: "h-10 px-6",

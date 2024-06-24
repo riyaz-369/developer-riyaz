@@ -14,9 +14,9 @@ module.exports = {
       padding: "15px",
     },
     screens: {
-      sm: "640px",
+      sm: "576px",
       md: "768px",
-      lg: "960px",
+      lg: "992px",
       xl: "1200px",
     },
     fontFamily: {
@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       colors: {
         dark: "#1c1c22",
+        "dark-blue": "#252734",
         primary: {
           DEFAULT: "#6366F1",
           hover: "#6366F9",

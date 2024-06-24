@@ -6,20 +6,20 @@ import MobileNav from "../Shared/Navbar/MobileNav";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-8 text-white bg-dark sticky top-0 z-50">
       <div className="container mx-auto flex justify-between">
         {/* logo */}
         <Link href="/">
           <span className="text-4xl font-semibold">Riyaz</span>
         </Link>
         {/* desktop navbar */}
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <Navbar />
           <Button>Hire Me</Button>
         </div>
 
         {/* mobile navbar */}
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <MobileNav />
         </div>
       </div>
