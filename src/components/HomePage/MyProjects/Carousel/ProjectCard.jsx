@@ -11,7 +11,7 @@ import { projects } from "../../Shared/projects";
 const ProjectCard = () => {
   return (
     <Carousel className="w-full">
-      <CarouselContent className="flex gap-4">
+      <CarouselContent className="flex">
         {projects.map((project) => (
           <CarouselItems key={project.num} project={project} />
         ))}
