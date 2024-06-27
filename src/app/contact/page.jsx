@@ -1,9 +1,11 @@
 "use client";
 
 import { contacts } from "@/components/HomePage/Shared/contacts";
+import { social } from "@/components/HomePage/Shared/social";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -37,9 +39,9 @@ const Contact = () => {
         </form>
       </div>
       {/* Contact info */}
-      <div className="flex flex-col gap-5 lg:w-1/3">
+      <div className="flex flex-col gap-5">
         {contacts.map((contact) => (
-          <div className="flex items-center gap-4 bg-dark p-3 rounded-3xl shadow-sm hover:shadow-primary transition-all duration-300">
+          <div className="flex items-center gap-4 bg-dark p-3 rounded-3xl shadow-sm hover:shadow-primary transition-all duration-300 pr-12">
             <span className="text-primary bg-dark-blue p-5 rounded-3xl text-2xl">
               {contact.icon}
             </span>
@@ -49,6 +51,16 @@ const Contact = () => {
             </span>
           </div>
         ))}
+        {/* social */}
+        <div className="flex gap-6 justify-center">
+          {social.map((item, idx) => (
+            <Link href={item.path} key={idx} className="">
+              <Button variant="outline" className="py-8 px-5 text-2xl">
+                {item.icon}
+              </Button>
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

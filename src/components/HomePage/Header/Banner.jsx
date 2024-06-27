@@ -30,15 +30,18 @@ const Banner = () => {
                 <FiDownload size={20} />
               </Button>
               <div className="mb-8 lg:mb-0 flex gap-4 ">
-                {social.map((item, idx) => (
-                  <Link
-                    href={item.path}
-                    key={idx}
-                    className="hover:text-primary transition-all"
-                  >
-                    {item.icon}
-                  </Link>
-                ))}
+                <div className="flex gap-6 justify-center">
+                  {social.map((item, idx) => (
+                    <Link href={item.path} key={idx} className="">
+                      <Button
+                        variant="outline"
+                        className="rounded-full py-5 px-[8px] text-2xl"
+                      >
+                        {item.icon}
+                      </Button>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
