@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section className="lg:flex justify-between items-center container mx-auto my-8 lg:my-12">
       {/* form */}
-      <div className="bg-dark p-6 mb-6 rounded-3xl shadow-sm hover:shadow-primary transition-all duration-300">
+      <div className="bg-dark p-8 mb-6 rounded-3xl shadow-sm hover:shadow-primary transition-all duration-300">
         <h2 className="text-primary">Let's work together</h2>
         <p className="text-white/70 text-wrap">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eum

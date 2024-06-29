@@ -7,24 +7,33 @@ import logo from "@/assets/logo/logo-rm.png";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center py-10 text-center bg-dark">
-      <aside className="space-y-4">
-        <div className="lg:flex lg:justify-between items-center container mx-auto">
-          {contacts.map((contact) => (
-            <div className="flex gap-4 mb-4 bg-dark p-3 rounded-3xl shadow-sm hover:shadow-primary transition-all duration-300 pr-12">
-              <span className="text-primary bg-dark-blue p-5 rounded-3xl text-2xl">
-                {contact.icon}
-              </span>
-              <span className="text-start w-full">
-                <small>{contact.label}</small>
-                <p>{contact.info}</p>
-              </span>
-            </div>
-          ))}
-          <div className="flex gap-6 justify-center">
+    <footer className="footer footer-center pt-12 bg-dark">
+      <aside className="space-y-4 container mx-auto pb-12">
+        <div className="flex justify-between gap-12">
+          {/* contacts info */}
+          <div className="lg:flex justify-between w-full">
+            {contacts.map((contact) => (
+              <div className="flex items-center gap-3 mb-3 lg:mb-0">
+                <Button
+                  variant="outline"
+                  className="rounded-full py-5 px-[8px] text-2xl"
+                >
+                  {contact.icon}
+                </Button>
+                <span className="text-white/80">
+                  <p>{contact.info}</p>
+                </span>
+              </div>
+            ))}
+          </div>
+          {/* social */}
+          <div className="flex flex-col md:justify-center lg:flex-row gap-3 lg:gap-5">
             {social.map((item, idx) => (
               <Link href={item.path} key={idx} className="">
-                <Button variant="outline" className="py-8 px-5 text-2xl">
+                <Button
+                  variant="outline"
+                  className="rounded-full py-5 px-[8px] text-2xl"
+                >
                   {item.icon}
                 </Button>
               </Link>
@@ -32,9 +41,9 @@ const Footer = () => {
           </div>
         </div>
       </aside>
-      <div className="my-8 border-b border-primary/40" />
-      <div className="flex justify-between container mx-auto items-center">
-        <span>©Copyright 2024 all right reserve</span>
+      <div className=" border-b border-primary/40" />
+      <div className="flex justify-between container mx-auto items-center py-4">
+        <span className="text-white/70">©Copyright 2024 all right reserve</span>
         <Link href="/">
           <Image src={logo} alt="" width={60} height={60} />
         </Link>

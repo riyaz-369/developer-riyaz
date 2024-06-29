@@ -4,10 +4,6 @@ export const links = [
     path: "/",
   },
   {
-    label: "about me",
-    path: "/about-me",
-  },
-  {
     label: "resume",
     path: "/resume",
   },
