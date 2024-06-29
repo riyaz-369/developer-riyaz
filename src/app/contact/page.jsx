@@ -1,7 +1,7 @@
 "use client";
 
-import { contacts } from "@/components/HomePage/Shared/contacts";
-import { social } from "@/components/HomePage/Shared/social";
+import { contacts } from "@/components/HomePage/Shared/data/contacts";
+import { social } from "@/components/HomePage/Shared/data/social";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/carousel";
 
 import CarouselItems from "./CarouselItems";
-import { projects } from "../../Shared/projects";
+import { projects } from "../../Shared/data/projects";
 
 const ProjectCard = () => {
   return (

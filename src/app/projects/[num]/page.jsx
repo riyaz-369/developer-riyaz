@@ -1,4 +1,4 @@
-import { projects } from "@/components/HomePage/Shared/projects";
+import { projects } from "@/components/HomePage/Shared/data/projects";
 import Image from "next/image";
 
 const page = ({ params }) => {

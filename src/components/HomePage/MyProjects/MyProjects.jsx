@@ -1,4 +1,4 @@
-import SectionTitle from "../Shared/SectionTitle";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 import ProjectCard from "./Carousel/ProjectCard";
 
 const MyProjects = () => {

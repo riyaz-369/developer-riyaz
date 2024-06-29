@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../HomePage/Shared/projects";
+import { projects } from "../HomePage/Shared/data/projects";
 import Card from "./CategoryCard/Card";
 
 const FullstackProjects = () => {

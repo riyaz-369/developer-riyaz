@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { social } from "./social";
-import { contacts } from "./contacts";
+import { social } from "../data/social";
+import { contacts } from "../data/contacts";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import logo from "@/assets/logo/logo-rm.png";

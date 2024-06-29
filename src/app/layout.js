@@ -1,12 +1,12 @@
-import { Roboto } from "next/font/google";
+import { Dosis } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/HomePage/Header/Header";
-import Footer from "@/components/HomePage/Shared/Footer";
+import Footer from "@/components/HomePage/Shared/Footer/Footer";
 
-const roboto = Roboto({
+const dosis = Dosis({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
-  variable: "--font-roboto",
+  weight: ["200", "300", "400", "500", "600", "700"],
+  variable: "--font-dosis",
 });
 
 export const metadata = {
@@ -17,8 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.variable}>
-        {/* header */}
+      <body className={dosis.variable}>
         <Header />
         {children}
         <Footer />

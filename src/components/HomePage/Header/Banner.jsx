@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 import bannerImg from "@/assets/banner/banner.png";
 import Image from "next/image";
 import Link from "next/link";
-import { social } from "../Shared/social";
+import { social } from "../Shared/data/social";
 
 const Banner = () => {
   return (
