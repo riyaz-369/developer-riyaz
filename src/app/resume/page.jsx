@@ -1,8 +1,10 @@
 import EducationContent from "@/components/HomePage/Shared/TabContents/EducationContent";
 import SkillsContent from "@/components/HomePage/Shared/TabContents/SkillsContent";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import AboutMeContent from "@/components/HomePage/Shared/TabContents/AboutMeContent";
 
-const page = () => {
+const ResumePage = () => {
   return (
     <div className="container mx-auto my-8 lg:my-12">
       {/* tabs */}
@@ -31,14 +33,19 @@ const page = () => {
           </TabsContent>
           {/* education content */}
           <TabsContent value="Education">
-            <EducationContent />
+            <ScrollArea className="h-[500px]">
+              <EducationContent />
+              <ScrollBar orientation="vertical" />
+            </ScrollArea>
           </TabsContent>
           {/* about content */}
-          <TabsContent value="About Me">About Me</TabsContent>
+          <TabsContent value="About Me">
+            <AboutMeContent />
+          </TabsContent>
         </div>
       </Tabs>
     </div>
   );
 };
 
-export default page;
+export default ResumePage;

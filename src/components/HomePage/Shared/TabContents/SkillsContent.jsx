@@ -11,7 +11,7 @@ const SkillsContent = () => {
   return (
     <div>
       <div className="mb-6">
-        <SectionTitle tag={"Skill"} title={skills.title} />
+        <SectionTitle tag={"Skill"} title={skills.title} sm={true} />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {skills.skillsList.map((item) => (
@@ -27,7 +27,7 @@ const SkillsContent = () => {
                     >
                       {item.icon}
                     </span>
-                    <p className="text-xl font-medium">{item.name}</p>
+                    <p className="text-lg font-medium">{item.name}</p>
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>{item.proficiency}</TooltipContent>

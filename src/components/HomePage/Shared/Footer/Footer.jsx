@@ -16,7 +16,7 @@ const Footer = () => {
               <div className="flex items-center gap-3 mb-3 lg:mb-0">
                 <Button
                   variant="outline"
-                  className="rounded-full py-5 px-[8px] text-2xl"
+                  className="rounded-full py-5 px-[9px] text-2xl"
                 >
                   {contact.icon}
                 </Button>
@@ -32,7 +32,7 @@ const Footer = () => {
               <Link href={item.path} key={idx} className="">
                 <Button
                   variant="outline"
-                  className="rounded-full py-5 px-[8px] text-2xl"
+                  className="rounded-full py-5 px-[9px] text-2xl"
                 >
                   {item.icon}
                 </Button>

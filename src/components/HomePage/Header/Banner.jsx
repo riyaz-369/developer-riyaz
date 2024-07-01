@@ -35,7 +35,7 @@ const Banner = () => {
                     <Link href={item.path} key={idx} className="">
                       <Button
                         variant="outline"
-                        className="rounded-full py-5 px-[8px] text-2xl"
+                        className="rounded-full py-5 px-[9px] text-2xl"
                       >
                         {item.icon}
                       </Button>
