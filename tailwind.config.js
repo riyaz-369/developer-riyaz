@@ -24,8 +24,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: "#1c1c22",
-        "dark-blue": "#252734",
+        dark: "#232229",
+        "dark-blue": "#1c1c22",
         primary: {
           DEFAULT: "#6366F1",
           hover: "#6366F9",
@@ -51,5 +51,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
 };

@@ -4,10 +4,12 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { social } from "../data/social";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { IoLanguage } from "react-icons/io5";
+import { BiWorld } from "react-icons/bi";
 
 const AboutMeContent = () => {
   return (
-    <section className="bg-dark rounded-3xl shadow-md hover:shadow-primary transition-all duration-300">
+    <section className="bg-dark rounded-3xl shadow-lg hover:shadow-primary/50 transition-all duration-300">
       <div className="p-6">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-1/2 mb-4 md:mb-0">
@@ -52,7 +54,19 @@ const AboutMeContent = () => {
               </div>
               <ScrollBar orientation="vertical" />
             </ScrollArea>
-            <div className="flex gap-6 mt-12">
+            <div className="mt-10">
+              <p className="flex items-center gap-2">
+                {" "}
+                <IoLanguage size={20} />
+                Language: <span className="text-white/60">English, Bangla</span>
+              </p>
+              <p className="flex items-center gap-2">
+                {" "}
+                <BiWorld size={20} />
+                Nationality: <span className="text-white/60">Bangladeshi</span>
+              </p>
+            </div>
+            <div className="flex gap-6 mt-8">
               {social.map((item, idx) => (
                 <Link href={item.path} key={idx} className="">
                   <Button variant="outline" className="py-6 px-3 text-2xl">

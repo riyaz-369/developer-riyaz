@@ -7,7 +7,7 @@ import logo from "@/assets/logo/logo-rm.png";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center pt-12 bg-dark">
+    <footer className="pt-12 bg-dark">
       <aside className="space-y-4 container mx-auto pb-12">
         <div className="flex justify-between gap-12">
           {/* contacts info */}
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </aside>
-      <div className=" border-b border-primary/40" />
+      <div className="border-b border-primary/40" />
       <div className="flex justify-between container mx-auto items-center py-4">
         <span className="text-white/70">©Copyright 2024 all right reserve</span>
         <Link href="/">

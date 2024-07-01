@@ -13,7 +13,7 @@ const ResumePage = () => {
         className="flex flex-col lg:flex-row mt-12 min-h-[50vh] gap-16"
       >
         <div>
-          <TabsList className="flex flex-col gap-4 items-center justify-center w-full lg:max-w-[300px]">
+          <TabsList className="flex flex-col gap-4 items-center justify-center w-full lg:w-[300px]">
             <TabsTrigger value="Skills" className="w-full">
               Skills
             </TabsTrigger>

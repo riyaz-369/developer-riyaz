@@ -6,11 +6,11 @@ const Projects = () => {
   return (
     <Tabs defaultValue="fullstack projects" className="mt-6">
       <div className="flex justify-center">
-        <TabsList className="gap-6 bg-dark/50 p-6">
-          <TabsTrigger value="fullstack projects" className="px-6">
+        <TabsList className="gap-4 bg-dark p-4">
+          <TabsTrigger value="fullstack projects" className="px-6 rounded-2xl">
             Fullstack Projects
           </TabsTrigger>
-          <TabsTrigger value="frontend projects" className="px-6">
+          <TabsTrigger value="frontend projects" className="px-6 rounded-2xl">
             Frontend Projects
           </TabsTrigger>
         </TabsList>

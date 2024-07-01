@@ -73,7 +73,7 @@ export const projects = [
     image: img4,
     category: "Frontend",
     description:
-      "A specialized real estate website on one specific type of property from the real estate house. The website allows users to browse, view their favorite houses.",
+      "Real estate website on one specific type of property from the real estate house. The website allows users to browse, view their favorite houses.",
     frontend_technology:
       "ReactJS, TailwindCSS, MambaUI, Firebase Authentication",
     key_features: [
