@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <footer className="pt-12 bg-dark">
       <aside className="space-y-4 container mx-auto pb-12">
-        <div className="flex justify-between gap-12">
+        <div className="flex justify-between">
           {/* contacts info */}
-          <div className="lg:flex justify-between w-full">
+          <div className="lg:flex justify-between gap-8">
             {contacts.map((contact) => (
               <div className="flex items-center gap-3 mb-3 lg:mb-0">
                 <Button

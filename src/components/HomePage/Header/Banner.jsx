@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import bannerImg from "@/assets/banner/banner.png";
+import bannerImg from "@/assets/banner/banner1.png";
 import Image from "next/image";
 import Link from "next/link";
 import { social } from "../Shared/data/social";
+import { contacts } from "../Shared/data/contacts";
 
 const Banner = () => {
   return (
@@ -47,10 +48,9 @@ const Banner = () => {
           </div>
           <div className="mb-8 lg:mb-0">
             <Image
-              className="object-contain"
+              className="object-contain w-[380px] h-[400px] xl:h-full"
               src={bannerImg}
               alt="Riyaz cover image"
-              width={600}
             />
           </div>
         </div>

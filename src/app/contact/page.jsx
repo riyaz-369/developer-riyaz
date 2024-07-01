@@ -41,15 +41,19 @@ const Contact = () => {
       {/* Contact info */}
       <div className="flex flex-col gap-5">
         {contacts.map((contact) => (
-          <div className="flex items-center gap-4 bg-dark p-3 rounded-3xl shadow-sm hover:shadow-primary transition-all duration-300 pr-12">
+          <a
+            href={contact.link}
+            target="_blank"
+            className="flex items-center gap-4 bg-dark p-3 rounded-3xl shadow-md hover:shadow-primary/50 transition-all duration-300 pr-12"
+          >
             <span className="text-primary bg-dark-blue p-5 rounded-3xl text-2xl">
               {contact.icon}
             </span>
             <span>
               <small>{contact.label}</small>
-              <p>{contact.info}</p>
+              <p>{contact.address}</p>
             </span>
-          </div>
+          </a>
         ))}
         {/* social */}
         <div className="flex gap-6 justify-center">
