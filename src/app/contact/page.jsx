@@ -58,11 +58,11 @@ const Contact = () => {
         {/* social */}
         <div className="flex gap-6 justify-center">
           {social.map((item, idx) => (
-            <Link href={item.path} key={idx} className="">
+            <a href={item.path} key={idx} target="_blank">
               <Button variant="outline" className="py-8 px-5 text-2xl">
                 {item.icon}
               </Button>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

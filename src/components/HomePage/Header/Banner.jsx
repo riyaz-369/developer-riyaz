@@ -23,17 +23,22 @@ const Banner = () => {
               Building Dynamic User Interfaces with React.js
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                className="flex items-center gap-2 justify-center"
+              <a
+                href="https://drive.google.com/file/d/1huc9OaoS0hFgCeel9q-vtBQte-2Ywbj7/view?usp=sharing"
+                target="_blank"
               >
-                <span>Get Resume</span>
-                <FiDownload size={20} />
-              </Button>
+                <Button
+                  variant="outline"
+                  className="flex items-center gap-2 justify-center"
+                >
+                  <span>Get Resume</span>
+                  <FiDownload size={20} />
+                </Button>
+              </a>
               <div className="mb-8 lg:mb-0 flex gap-4 ">
                 <div className="flex gap-6 justify-center">
                   {social.map((item, idx) => (
-                    <Link href={item.path} key={idx} className="">
+                    <Link href={item.path} key={idx} target="_blank">
                       <Button
                         variant="outline"
                         className="rounded-full py-5 px-[9px] text-2xl"

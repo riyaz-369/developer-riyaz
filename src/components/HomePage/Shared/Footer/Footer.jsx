@@ -14,14 +14,16 @@ const Footer = () => {
           <div className="lg:flex justify-between gap-8">
             {contacts.map((contact) => (
               <div className="flex items-center gap-3 mb-3 lg:mb-0">
-                <Button
-                  variant="outline"
-                  className="rounded-full py-5 px-[9px] text-2xl"
-                >
-                  {contact.icon}
-                </Button>
+                <a href={contact.link} target="_blank">
+                  <Button
+                    variant="outline"
+                    className="rounded-full py-5 px-[9px] text-2xl"
+                  >
+                    {contact.icon}
+                  </Button>
+                </a>
                 <span className="text-white/80">
-                  <p>{contact.info}</p>
+                  <p>{contact.address}</p>
                 </span>
               </div>
             ))}
@@ -29,14 +31,14 @@ const Footer = () => {
           {/* social */}
           <div className="flex flex-col md:justify-center lg:flex-row gap-3 lg:gap-5">
             {social.map((item, idx) => (
-              <Link href={item.path} key={idx} className="">
+              <a target="_blank" href={item.path} key={idx} className="">
                 <Button
                   variant="outline"
                   className="rounded-full py-5 px-[9px] text-2xl"
                 >
                   {item.icon}
                 </Button>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
